@@ -28,5 +28,11 @@ document.addEventListener('DOMContentLoaded',function(){
     butCrt.addEventListener("click",function(){
         alert("click on button")
     })
+    const btn2=document.createElement("button")
+    document.body.appendChild(btn2)
+    btn2.textContent="it is second bitton"
+    btn2.addEventListener("click",()=>{
+        alert("it is a second button")
+    })
 
 })
