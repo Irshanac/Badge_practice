@@ -34,5 +34,17 @@ document.addEventListener('DOMContentLoaded',function(){
     btn2.addEventListener("click",()=>{
         alert("it is a second button")
     })
+    const hd3=document.getElementById('head3')
+    hd3.textContent="good morning"
+    hd3.style.backgroundColor="yellow"
+    const bu4=document.createElement("button")
+    document.body.appendChild(bu4)
+    bu4.textContent="hi"
+    bu4.addEventListener("click",()=>{
+        alert("hi")
+        bu4.remove()
+    })
+   // document.insertBefore(bu4,querySelectorSingleOne)
+
 
 })
