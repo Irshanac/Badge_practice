@@ -7,7 +7,8 @@ function Todo() {
     const [editValue,setEditValue]=useState('')
     const todolist=()=>{
         if(text.trim())
-        setTosdo([...todo,text])
+       // setTosdo([...todo,text])
+        setTosdo((p)=>[...p,text])
         setTtext("")
     }
     const deletes=(index)=>{
