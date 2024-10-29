@@ -2,7 +2,9 @@ import React, { useContext } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import {ContextBlog} from './BlogContext'
 function ShowBlog() {
-    const {blog}=useContext(ContextBlog)
+    const {blog,deleteBlog}=useContext(ContextBlog)
+    console.log(blog);
+    
     const navigate=useNavigate()
   return (
     <div>
@@ -11,6 +13,8 @@ function ShowBlog() {
         {blog.map((blog)=>(
             <div key={blog.id}>
                 <Link to={`/blogDetails/${blog.id}`} >{blog.text}</Link>
+                <button onClick={()=>navigate(`/editData/${blog.id}`)}>Edit</button>
+                <button onClick={()=>deleteBlog(blog.id)}>Delete</button>
             </div>
         ))}
       </div>)}
