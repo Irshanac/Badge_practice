@@ -3,7 +3,6 @@ import {Link, useNavigate} from 'react-router-dom'
 import {ContextBlog} from './BlogContext'
 function ShowBlog() {
     const {blog,deleteBlog}=useContext(ContextBlog)
-    console.log(blo);
     
     const navigate=useNavigate()
   return (

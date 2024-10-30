@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Example</title>
+    <style>
+        .none-box {
+            display: none; 
+        }
+
+        .inline-box {
+            display: inline;
+            background-color: lightblue;
+        }
+
+        .block-box {
+            display: block;
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+        }
+
+        .inline-block-box {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: lightgreen;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>This is an inline box <span class="inline-box">inline content</span> within text.</p>
+
+    <div class="block-box">This is a block box</div>
+
+    <p>Inline-block boxes in a row:</p>
+    <div class="inline-block-box">Box 1</div>
+    <div class="inline-block-box">Box 2</div>
+    <div class="inline-block-box">Box 3</div>
+
+</body>
+</html>
