@@ -7,16 +7,34 @@
     <style>
         .class-trans{
             height: 50px;
-            width: 30px;
+
+
+
+
+
+
+            
+            width: 50px;
             background-color: blue;
-            transition: transform 3s;
-            transition-duration: 5s;
-            transition-timing-function: linear;
+           position: relative;
+            animation-name: move;
+            animation-duration: 4s;
 
         }
-        .class-trans:hover{
-            transform: skew(30deg,40deg);
-            background-color: yellow;
+        @keyframes move{
+            0%{
+                left: 0px;
+                border-radius: 0px;
+
+            }
+            50%{
+                top: 50px;
+            }
+            100%{
+                top:60px;
+                left:100px;
+                border-radius: 60px;
+            }
         }
     </style>
 </head>
